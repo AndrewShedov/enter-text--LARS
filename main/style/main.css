@@ -1,0 +1,101 @@
+/* reset css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none !important;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* /reset css */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	color: #000000;
+	font-size: 30px;
+	margin-top: 35px;
+}
+
+.card {
+	width: max-content;
+	background: white;
+	border: 1px solid #ddd;
+	padding: 25px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-label {
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.db-text {
+	color: #000000;
+	font-size: 19px;
+	margin: 15px 0;
+	font-weight: normal;
+}
+
+.separator {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+}
+ 
+.input-row {
+	display: flex;
+	gap: 15px;
+}
+
+.input-field {
+	color: #000000;
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	height: 40px;
+}
+
+.btn {
+	color: white;
+	font-size: 16px;
+	padding: 0 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 40px;
+}
+
+.btn-black {
+	background: #000000;
+}
+
+.btn-red {
+	background: #ff0000;
+	margin-left: 10px;
+}

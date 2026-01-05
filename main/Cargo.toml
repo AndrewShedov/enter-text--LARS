@@ -1,0 +1,75 @@
+[package]
+name = "enter_text_lars"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# Common dependencies
+serde = { version = "1.0", features = ["derive"] }
+console_error_panic_hook = "0.1"
+leptos = { version = "0.8.2" }
+leptos_meta = { version = "0.8.2" }
+leptos_router = { version = "0.8.2" }
+wasm-bindgen = "=0.2.105"
+
+# IMPORTANT: uuid with "js" feature for browser compatibility
+uuid = { version = "1.0", features = ["v4", "js"] }
+
+# Optional dependencies (enabled via features)
+actix-files = { version = "0.6", optional = true }
+actix-web = { version = "4", optional = true, features = ["macros"] }
+http = { version = "1.3.1", optional = true }
+leptos_actix = { version = "0.8.2", optional = true }
+scylla = { version = "0.14", optional = true }
+
+[features]
+csr = ["leptos/csr"]
+hydrate = ["leptos/hydrate"]
+ssr = [
+  "dep:scylla",
+  "dep:actix-files",
+  "dep:actix-web",
+  "dep:leptos_actix",
+  "dep:http",
+  "leptos/ssr",
+  "leptos_meta/ssr",
+  "leptos_router/ssr",
+]
+
+[package.metadata.leptos]
+# Project name (matches [package] name)
+output-name = "enter_text_lars"
+
+# Directory for static files (pkg, assets)
+site-root = "target/site"
+
+# Directory for compiled JS/WASM files
+site-pkg-dir = "pkg"
+
+# Source style file
+style-file = "style/main.css"
+
+# Assets directory
+assets-dir = "assets"
+
+# Server address
+site-addr = "127.0.0.1:3000"
+
+# Reload port for development
+reload-port = 3001
+
+# End-to-end testing command
+end2end-cmd = "npx playwright test"
+end2end-dir = "end2end"
+
+browserquery = "defaults"
+env = "DEV"
+
+# Features used for server and client builds
+bin-features = ["ssr"]
+bin-default-features = false
+lib-features = ["hydrate"]
+lib-default-features = false
