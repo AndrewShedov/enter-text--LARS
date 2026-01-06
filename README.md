@@ -4,7 +4,7 @@
 # Enter Text (LARS)
 
 This application is a prototype developed to prepare for the transition of [CRYSTAL](https://github.com/CrystalSystems) to a new technology stack — **LARS** (Leptos, Actix Web, Rust, ScyllaDB).<br/>
-This prototype allows you to **add**, **display**, **update**, and **delete text**, demonstrating a full **CRUD** operation cycle with the **ScyllaDB** database.
+This prototype allows you to **add**, **display**, **update**, and **delete text**, demonstrating a full **CRUD** operation cycle with the ScyllaDB database.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif.gif"/>
