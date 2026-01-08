@@ -9,6 +9,18 @@ This prototype allows you to **add**, **display**, **update**, and **delete text
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif.gif"/>
 </p>
+
+**Composition:** <br/>
+[Full code](https://github.com/AndrewShedov/enter-text--LARS/tree/main/main) | [Cargo.toml](https://github.com/AndrewShedov/enter-text--LARS/blob/main/main/Cargo.toml)<br/>
+
+**Structure:** <br/>
+**L**eptos v0.8.2<br/>
+**A**ctix Web v4.x<br/>
+**R**ust v1.92.0<br/>
+**S**cyllaDB v2025.4.0<br/>
+
+**Local PC Specifications:** <br/>
+OS: Debian 12<br/>
  
 ### Key Features: 
 
