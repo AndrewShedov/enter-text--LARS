@@ -35,7 +35,7 @@ OS: Debian 12.<br>
 <span id="paragraph_2"></span> 
 ### 2. Key Features: 
 
-2.1. **Auto-Schema, Single-Row Architecture, and Constant-id.**<br>
+2.1. **Auto-Schema, Single-Row Architecture, and Constant-id**<br>
 Upon application startup, the <code>data</code> table is automatically created (if it does not exist) to store the entered text. During the save operation, a row is formed in the table, consisting of three columns: <code>id</code> (Primary Key), <code>content</code> (text data), and <code>created_at</code> (timestamp). A constant <code>id</code> of <code>UUID format (11111111-1111-1111-1111-111111111111)</code> is used for the entered text. Instead of creating multiple entries, the system uses the <code>INSERT</code> operation as an <code>"upsert"</code> (updating an existing record). Since the <code>id</code> is always the same, any save operation simply overwrites the data in the content column for this specific row.
 
 <p align="center">
@@ -44,7 +44,8 @@ Upon application startup, the <code>data</code> table is automatically created (
 <p align="center"><strong>Screenshot 1: Single Row View</strong></p>
 
 
-2.2. **Blocking SSR (SsrMode::PartiallyBlocked)**: A blocking server-side rendering mode. This ensures that dynamic content from ScyllaDB (and all other site text) is "injected" into the HTML structure directly on the server. As a result, search engine crawlers receive a fully rendered document, ensuring 100% indexing and high SEO performance.
+2.2. **Blocking SSR (SsrMode::PartiallyBlocked)**<br>
+A blocking server-side rendering mode. This ensures that dynamic content from ScyllaDB (and all other site text) is "injected" into the HTML structure directly on the server. As a result, search engine crawlers receive a fully rendered document, ensuring 100% indexing and high SEO performance.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_2.png"/>
@@ -52,15 +53,20 @@ Upon application startup, the <code>data</code> table is automatically created (
 <p align="center"><strong>Screenshot 2: Server-Side Rendered (SSR) Source Code View (Ctrl+U)</strong></p>
 
 
-2.3. **Fine-grained Reactivity**: When text is updated, only the specific DOM node containing that text is re-rendered, while the rest of the page remains untouched. This behavior is achieved through Leptos reactive signals.
+2.3. **Fine-grained Reactivity**<br>
+When text is updated, only the specific DOM node containing that text is re-rendered, while the rest of the page remains untouched. This behavior is achieved through Leptos reactive signals.
 
-2.4. **Isomorphic Data Access & Reactive UI**: The use of <code>Resource::new_blocking</code> ensures seamless state synchronization between the server and the client. It automatically monitors database changes via action versions, allowing the UI to instantly toggle buttons (e.g., switching between "Add" and "Update" or showing the "Delete" button) without a page reload.
+2.4. **Isomorphic Data Access & Reactive UI**<br>
+The use of <code>Resource::new_blocking</code> ensures seamless state synchronization between the server and the client. It automatically monitors database changes via action versions, allowing the UI to instantly toggle buttons (e.g., switching between "Add" and "Update" or showing the "Delete" button) without a page reload.
 
-2.5. **Asynchronous ScyllaDB Integration**: High-performance asynchronous connection via <code>scylla-rust-driver</code>. Using a shared <code>Arc<Session></code> allows the server to handle thousands of concurrent requests simultaneously without blocking CPU threads while waiting for database responses. This ensures maximum system performance under heavy load.
+2.5. **Asynchronous ScyllaDB Integration**<br>
+High-performance asynchronous connection via <code>scylla-rust-driver</code>. Using a shared <code>Arc<Session></code> allows the server to handle thousands of concurrent requests simultaneously without blocking CPU threads while waiting for database responses. This ensures maximum system performance under heavy load.
 
-2.6. **SSR Isolation**: All database interaction code is protected by <code>#[cfg(feature = "ssr")]</code> macros. This guarantees that database drivers and sensitive logic never leave the server.
+2.6. **SSR Isolation**<br>
+All database interaction code is protected by <code>#[cfg(feature = "ssr")]</code> macros. This guarantees that database drivers and sensitive logic never leave the server.
 
-2.7. **Informative Server Logging**: The system outputs clear and visual operation reports to the console:
+2.7. **Informative Server Logging**<br>
+The system outputs clear and visual operation reports to the console:
 
 
 <p align="center">
