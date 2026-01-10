@@ -60,7 +60,7 @@ Upon application startup, the <code>data</code> table is automatically created (
 
 2.6. **SSR Isolation**: All database interaction code is protected by <code>#[cfg(feature = "ssr")]</code> macros. This guarantees that database drivers and sensitive logic never leave the server.
 
-2.7. **Informative Server Logging**: The system outputs clear and visual operation reports to the console, significantly simplifying monitoring and debugging of the server side:
+2.7. **Informative Server Logging**: The system outputs clear and visual operation reports to the console:
 
 
 <p align="center">
