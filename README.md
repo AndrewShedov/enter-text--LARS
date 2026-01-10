@@ -79,7 +79,7 @@ The system outputs clear and visual operation reports to the console:
 
 **Compatibility Note:** This project is verified to work on Debian 12. Development on Windows is not recommended, as the installation process for Leptos and ScyllaDB on that system can cause critical errors. A Linux-based environment is required for correct operation.
 
-**3.1. Environment Preparation (Debian 12 and similar).**<br>
+**3.1. Environment Preparation (Debian 12 and similar)**<br>
 To ensure the project builds correctly, basic compilation tools and security libraries must be installed on the system.
 
 Installing system dependencies:
@@ -98,19 +98,19 @@ The project is compatible with the Stable version of Rust, which guarantees buil
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-3.2.2. Configure environment variables:
+**3.2.2. Configure environment variables:**
 
 ```bash
 source $HOME/.cargo/env
 ```
 
-3.2.3. Add WebAssembly support:
+**3.2.3. Add WebAssembly support:**
 
 ```bash
 rustup target add wasm32-unknown-unknown
 ```
 
-3.2.4. Install the cargo-leptos build tool:
+**3.2.4. Install the cargo-leptos build tool:**
 
 ```bash
 cargo install --locked cargo-leptos
@@ -120,37 +120,37 @@ cargo install --locked cargo-leptos
 
 Installation is performed directly on the Debian 12 system using the official ScyllaDB repository.
 
-3.3.1. Update package indexes:
+**3.3.1. Update package indexes:**
 
 ```bash
 sudo apt-get update
 ```
 
-3.3.2. Install necessary system utilities:
+**3.3.2. Install necessary system utilities:**
 
 ```bash
 sudo apt-get install -y apt-transport-https curl gnupg
 ```
 
-3.3.3. Add the official ScyllaDB repository to the system:
+**3.3.3. Add the official ScyllaDB repository to the system:**
 
 ```bash
 curl -sSf https://get.scylladb.com/server | sudo bash
 ```
 
-3.3.4. Interactive configuration and ScyllaDB installation:
+**3.3.4. Interactive configuration and ScyllaDB installation:**
 
 ```bash
 sudo scylla_setup
 ```
 
-3.3.5. Start the ScyllaDB server service:
+**3.3.5. Start the ScyllaDB server service:**
 
 ```bash
 sudo systemctl start scylla-server
 ```
 
-3.3.6. Check the status of cluster nodes:
+**3.3.6. Check the status of cluster nodes:**
 
 ```bash
 nodetool status
@@ -179,13 +179,13 @@ This **keyspace** is required for the application to function correctly.
 <span id="paragraph_5"></span> 
 ### 5. Launching the project
 
-5.1. Cloning the project repository:
+**5.1. Cloning the project repository:**
 
 ```bash
 git clone https://github.com/AndrewShedov/enter-text--LARS && cd enter-text--LARS/main 
 ```
 
-5.2. Launch the project:
+**5.2. Launch the project:**
 
 ```bash
 cargo leptos watch
