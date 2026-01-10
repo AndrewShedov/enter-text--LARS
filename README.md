@@ -7,7 +7,7 @@ This application is a prototype developed to prepare for the transition of [CRYS
 This prototype allows you to **add**, **display**, **update**, and **delete text**, demonstrating a full **CRUD** operation cycle with the ScyllaDB database.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif.gif"/>
+  <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif2.gif"/>
 </p>
 
 **Contents:**<br>
