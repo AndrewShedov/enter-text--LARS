@@ -45,7 +45,7 @@ Upon application startup, the <code>data</code> table is automatically created (
 
 
 **2.2. Blocking SSR (SsrMode::PartiallyBlocked)**<br>
-A blocking server-side rendering mode. This ensures that dynamic content from ScyllaDB (and all other site text) is "injected" into the HTML structure directly on the server. As a result, search engine crawlers receive a fully rendered document, ensuring 100% indexing and high SEO performance.
+A blocking server-side rendering mode. This ensures that dynamic content from ScyllaDB (and all other site text) is "injected" into the HTML structure directly on the server. As a result, search engine crawlers receive a fully rendered document, ensuring 100% indexing and high SEO performance:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_2.png"/>
