@@ -36,7 +36,7 @@ OS: Debian 12.<br>
 ### 2. Key Features: 
 
 **2.1. Auto-Schema, Single-Row Architecture, and Constant-id**<br>
-Upon application startup, the <code>data</code> table is automatically created (if it does not exist) to store the entered text. During the save operation, a row is formed in the table, consisting of three columns: <code>id</code> (Primary Key), <code>content</code> (text data), and <code>created_at</code> (timestamp). A constant <code>id</code> of <code>UUID format (11111111-1111-1111-1111-111111111111)</code> is used for the entered text. Instead of creating multiple entries, the system uses the <code>INSERT</code> operation as an <code>"upsert"</code> (updating an existing record). Since the <code>id</code> is always the same, any save operation simply overwrites the data in the content column for this specific row.
+Upon application startup, the <code>data</code> table is automatically created (if it does not exist) to store the entered text. During the save operation, a row is formed in the table, consisting of three columns: <code>id</code> (Primary Key), <code>content</code> (text data), and <code>created_at</code> (timestamp). A constant <code>id</code> of <code>UUID format (11111111-1111-1111-1111-111111111111)</code> is used for the entered text. Instead of creating multiple entries, the system uses the <code>INSERT</code> operation as an <code>"upsert"</code> (updating an existing record). Since the <code>id</code> is always the same, any save operation simply overwrites the data in the content column for this specific row:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_1.png"/>
