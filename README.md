@@ -80,7 +80,6 @@ The system outputs clear and visual operation reports to the console:
 **Compatibility Note:** This project is verified to work on Debian 12. Development on Windows is not recommended, as the installation process for Leptos and ScyllaDB on that system can cause critical errors. A Linux-based environment is required for correct operation.
 
 **3.1. Environment Preparation (Debian 12 and similar)**<br>
-To ensure the project builds correctly, basic compilation tools and security libraries must be installed on the system.
 
 Installing system dependencies:
 
