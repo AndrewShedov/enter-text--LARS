@@ -50,7 +50,7 @@ A blocking server-side rendering mode. This ensures that dynamic content from Sc
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_2.png"/>
 </p>
-<p align="center"><strong>Screenshot 2: Server-Side Rendered (SSR) Source Code View (Ctrl+U)</strong></p>
+<p align="center"><strong>Screenshot 2: Server-Side Rendered (SSR). View source code in a browser (Ctrl+U)</strong></p>
 
 
 **2.3. Fine-grained Reactivity**<br>
