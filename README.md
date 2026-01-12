@@ -66,8 +66,7 @@ High-performance asynchronous connection via <code>scylla-rust-driver</code>. Th
 All database interaction code is protected by <code>#[cfg(feature = "ssr")]</code> macros. This guarantees that database drivers and sensitive logic never leave the server.
 
 **2.7. Informative Server Logging**<br>
-The system outputs clear and visual operation reports to the console:
-
+The system outputs informative operation reports to the console:
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_3.1.png" width="750" />
