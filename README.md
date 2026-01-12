@@ -60,7 +60,7 @@ When text is updated, only the specific DOM node containing that text is re-rend
 The use of <code>Resource::new_blocking</code> ensures seamless state synchronization between the server and the client. It automatically monitors database changes via action versions, allowing the UI to instantly toggle buttons (e.g., switching between "Add" and "Update" or showing the "Delete" button) without a page reload.
 
 **2.5. Asynchronous ScyllaDB Integration**<br>
-High-performance asynchronous connection via <code>scylla-rust-driver</code>. Using a shared <code>Arc<Session></code> allows the server to handle thousands of concurrent requests simultaneously without blocking CPU threads while waiting for database responses. This ensures maximum system performance under heavy load.
+High-performance asynchronous connection via <code>scylla-rust-driver</code>. Using a shared <code><Arc<Session>></code> allows the server to handle thousands of concurrent requests simultaneously without blocking CPU threads while waiting for database responses. This ensures maximum system performance under heavy load.
 
 **2.6. SSR Isolation**<br>
 All database interaction code is protected by <code>#[cfg(feature = "ssr")]</code> macros. This guarantees that database drivers and sensitive logic never leave the server.
