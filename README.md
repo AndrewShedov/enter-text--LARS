@@ -173,8 +173,6 @@ CREATE KEYSPACE IF NOT EXISTS prototype
 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 ```
 
-This **keyspace** is required for the application to function correctly.
-
 <span id="paragraph_5"></span> 
 ### 5. Launching the project
 
