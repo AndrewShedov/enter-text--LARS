@@ -89,8 +89,6 @@ sudo apt update && sudo apt install build-essential pkg-config libssl-dev -y
 
 **3.2. Installing Rust and Leptos Tools**
 
-The project is compatible with the Stable version of Rust, which guarantees build predictability.
-
 **3.2.1. Install Rust (installs the current stable version):**
 
 ```bash
