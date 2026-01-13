@@ -71,7 +71,7 @@ The system outputs informative operation reports to the console:
 <p align="center">
     <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_3.1.png" width="750" />
 </p>
-<p align="center"><strong>Screenshot 3: Server Startup and ScyllaDB Readiness Log</strong></p>
+<p align="center"><strong>Screenshot 3: ScyllaDB readiness log</strong></p>
 
 <span id="paragraph_3"></span> 
 ### 3. Installation & Setup
