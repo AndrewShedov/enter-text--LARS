@@ -11,14 +11,14 @@ This prototype allows you to **add**, **display**, **update**, and **delete text
 </p>
 
 **Contents:**<br>
-1. [Project structure and local PC specifications.](#paragraph_1)
+1. [Project structure and local PC specifications](#paragraph_1)
 2. [Key Features](#paragraph_2)
 3. [Installation & Setup](#paragraph_3)
 4. [Database Preparation](#paragraph_4)
 5. [Launching the project](#paragraph_5)
 
 <span id="paragraph_1"></span> 
-### 1. Project structure and local PC specifications. 
+### 1. Project structure and local PC specifications 
 
 **Composition:** <br>
 [Full code](https://github.com/AndrewShedov/enter-text--LARS/tree/main/main) | [Cargo.toml](https://github.com/AndrewShedov/enter-text--LARS/blob/main/main/Cargo.toml)<br>
