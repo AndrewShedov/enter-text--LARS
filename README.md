@@ -69,7 +69,7 @@ All database interaction code is protected by <code>#[cfg(feature = "ssr")]</cod
 The system outputs informative operation reports to the console:
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_3.webp" width="750" />
+    <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/screenshot_3.1.webp" width="750" />
 </p>
 <p align="center"><strong>Screenshot 3: ScyllaDB readiness log</strong></p>
 
