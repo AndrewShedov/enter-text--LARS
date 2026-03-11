@@ -70,7 +70,7 @@ async fn main() -> std::io::Result<()> {
 // Function for table creation
 #[cfg(feature = "ssr")]
 async fn initialize_schema(session: &scylla::Session) {
-    println!("🧪 CRYSTAL: Checking data schema...");
+    println!("🧪 Checking data schema...");
 
     // Create table if it doesn't exist
     session.query_unpaged(
@@ -82,7 +82,7 @@ async fn initialize_schema(session: &scylla::Session) {
         ()
     ).await.expect("❌ Error creating 'data' table");
 
-    println!("✨ CRYSTAL: Table 'data' verified/created successfully");
+    println!("✨ Table 'data' verified/created successfully");
 }
 
 #[cfg(feature = "ssr")]
