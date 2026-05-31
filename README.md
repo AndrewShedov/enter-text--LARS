@@ -207,6 +207,11 @@ After entering the command, the address should be displayed:<br>
 <code>Connected to at 127.0.0.1:9042</code>
 <br>
 <br>
+>Lars is a traditional Scandinavian male name: https://en.wikipedia.org/wiki/Lars, and that is exactly what inspired me when choosing the stack name.<br> 
+I also really love Scandinavia and Norse mythology.<br>
+I'm adding this because many people have been curious about how I came up with it 😅
+<br>
+<br>
 
 [![SHEDOV.TOP](https://img.shields.io/badge/SHEDOV.TOP-black?style=for-the-badge)](https://shedov.top/) 
 [![CRYSTAL](https://img.shields.io/badge/CRYSTAL-black?style=for-the-badge)](https://crystal.you/AndrewShedov)
