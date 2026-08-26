@@ -57,7 +57,7 @@ A blocking server-side rendering mode. This ensures that dynamic content from Sc
 **2.3. Fine-grained Reactivity**<br>
 When text is updated, only the specific DOM node containing that text is re-rendered, while the rest of the page remains untouched. This behavior is achieved through Leptos reactive signals.
 
-**2.4. Works with JavaScript Disabled**
+**2.4. Works with JavaScript Disabled**<br>
 The application is designed to remain fully functional even if JavaScript is disabled in the user's browser. Leveraging server-side rendering and Leptos's <ActionForm>, basic data operations (adding and deleting content) seamlessly fall back to native HTML form submissions with standard page reloads. This ensures absolute fault tolerance.
 
 You can test this behavior by disabling JavaScript in your browser:
