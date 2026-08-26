@@ -62,7 +62,7 @@ The application is designed to remain fully functional even if JavaScript is dis
 
 You can test this behavior by disabling JavaScript in your browser:
 * **Google Chrome / Chromium:** Open Developer Tools (`F12`), press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) to open the Command Menu, type `Disable JavaScript`, and press Enter.
-* **Mozilla Firefox:** Type `about:config` in the address bar, accept the risk, search for the `javascript.enabled` preference, and click it to toggle the value to `false`.
+* **Mozilla Firefox:** Type `about:config` in the address bar, accept the risk, search for the `javascript.enabled` preference, and double-click it to toggle the value to `false`.
 
 **2.5. Isomorphic Data Access & Reactive UI**<br>
 The use of <code>Resource::new_blocking</code> ensures seamless state synchronization between the server and the client. It automatically monitors database changes via action versions, allowing the UI to instantly toggle buttons (e.g., switching between "Add" and "Update" or showing the "Delete" button) without a page reload.
