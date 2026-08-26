@@ -57,16 +57,23 @@ A blocking server-side rendering mode. This ensures that dynamic content from Sc
 **2.3. Fine-grained Reactivity**<br>
 When text is updated, only the specific DOM node containing that text is re-rendered, while the rest of the page remains untouched. This behavior is achieved through Leptos reactive signals.
 
-**2.4. Isomorphic Data Access & Reactive UI**<br>
+**2.4. Works with JavaScript Disabled**
+The application is designed to remain fully functional even if JavaScript is disabled in the user's browser. Leveraging server-side rendering and Leptos's <ActionForm>, basic data operations (adding and deleting content) seamlessly fall back to native HTML form submissions with standard page reloads. This ensures absolute fault tolerance.
+
+You can test this behavior by disabling JavaScript in your browser:
+* **Google Chrome / Chromium:** Open Developer Tools (`F12`), press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) to open the Command Menu, type `Disable JavaScript`, and press Enter.
+* **Mozilla Firefox:** Type `about:config` in the address bar, accept the risk, search for the `javascript.enabled` preference, and click it to toggle the value to `false`.
+
+**2.5. Isomorphic Data Access & Reactive UI**<br>
 The use of <code>Resource::new_blocking</code> ensures seamless state synchronization between the server and the client. It automatically monitors database changes via action versions, allowing the UI to instantly toggle buttons (e.g., switching between "Add" and "Update" or showing the "Delete" button) without a page reload.
 
-**2.5. Asynchronous ScyllaDB Integration**<br>
+**2.6. Asynchronous ScyllaDB Integration**<br>
 High-performance asynchronous connection via <code>scylla-rust-driver</code>. Thanks to the use of a shared <code>Arc&lt;Session&gt;</code>, the server efficiently distributes resources and can handle thousands of concurrent requests without blocking CPU threads. While the database is preparing a response, the CPU remains free for other tasks, ensuring maximum system responsiveness under extreme loads.
 
-**2.6. SSR Isolation**<br>
+**2.7. SSR Isolation**<br>
 All database interaction code is protected by <code>#[cfg(feature = "ssr")]</code> macros. This guarantees that database drivers and sensitive logic never leave the server.
 
-**2.7. Informative Server Logging**<br>
+**2.8. Informative Server Logging**<br>
 The system outputs informative operation reports to the console:
 
 <p align="center">
