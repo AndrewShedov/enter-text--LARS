@@ -8,7 +8,7 @@ async fn main() -> std::io::Result<()> {
     use leptos_meta::MetaTags;
     use leptos_actix::{generate_route_list, LeptosRoutes};
     use enter_text_lars::app::*; 
-    use scylla::SessionBuilder;
+    use scylla::client::session_builder::SessionBuilder;
     use std::sync::Arc;
 
     let conf = get_configuration(None).unwrap();
@@ -69,7 +69,7 @@ async fn main() -> std::io::Result<()> {
 
 // Function for table creation
 #[cfg(feature = "ssr")]
-async fn initialize_schema(session: &scylla::Session) {
+async fn initialize_schema(session: &scylla::client::session::Session) {
     println!("🧪 Checking data schema...");
 
     // Create table if it doesn't exist
