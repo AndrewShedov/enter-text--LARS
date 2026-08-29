@@ -28,7 +28,7 @@ This prototype allows you to **add**, **display**, **update**, and **delete text
 **L**eptos v0.8.2.<br>
 **A**ctix Web v4.15.0.<br>
 **R**ust v1.98.0.<br>
-**S**cyllaDB v2025.4.0.<br>
+**S**cyllaDB v2025.4.0 (driver: v1.8.0).<br>
 
 **Local PC Specifications:** <br>
 OS: Debian 12.<br>
