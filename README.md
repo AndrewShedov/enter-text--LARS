@@ -8,7 +8,7 @@ This prototype allows you to **add**, **display**, **update**, and **delete text
 **Blocking Server-Side Rendering (SSR)** fully renders database content directly on the server, guaranteeing **100% search engine indexing** and top-tier **SEO performance**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif2.gif"/>
+  <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif.gif"/>
 </p>
 
 **Contents:**<br>
