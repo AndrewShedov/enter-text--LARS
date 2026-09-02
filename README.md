@@ -28,7 +28,7 @@ This prototype allows you to **add**, **display**, **update**, and **delete text
 **L**eptos v0.8.2.<br>
 **A**ctix Web v4.15.0.<br>
 **R**ust v1.98.0.<br>
-**S**cyllaDB v2025.4.0 (driver: v1.8.0).<br>
+**S**cyllaDB v2026.2.6 (driver: v1.8.0).<br>
 
 **Local PC Specifications:** <br>
 OS: Debian 12.<br>
@@ -138,10 +138,10 @@ sudo apt-get install -y apt-transport-https curl gnupg
 
 **3.3.3. Add the official ScyllaDB repository to the system:**
 
-📌 Note: By default, this script automatically registers the repository for the latest stable version of ScyllaDB Open Source. To explicitly install ScyllaDB v2025.4.x used in this prototype, run the command with the version flag:
+📌 Note: By default, this script automatically registers the repository for the latest stable version of ScyllaDB Open Source. To explicitly install ScyllaDB v2026.2.x used in this prototype, run the command with the version flag:
 
 ```bash
-curl -sSf https://get.scylladb.com/server | sudo bash -s -- --scylla-version 2025.4
+curl -sSf https://get.scylladb.com/server | sudo bash -s -- --scylla-version 2026.2
 ```
 
 
