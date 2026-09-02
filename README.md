@@ -138,7 +138,7 @@ sudo apt-get install -y apt-transport-https curl gnupg
 
 **3.3.3. Add the official ScyllaDB repository to the system:**
 
-📌 Note: By default, this script automatically registers the repository for the latest stable version of ScyllaDB Open Source. To explicitly install ScyllaDB v2026.2.x used in this prototype, run the command with the version flag:
+📌 Note: By default, this script automatically registers the repository for the latest stable version of ScyllaDB Open Source. To explicitly install ScyllaDB v2026.2.6 used in this prototype, run the command with the version flag:
 
 ```bash
 curl -sSf https://get.scylladb.com/server | sudo bash -s -- --scylla-version 2026.2
