@@ -26,7 +26,7 @@
 ### 1. Структура проекта и характеристики локального ПК 
 
 **Строение:** <br>
-[Полный код](https://github.com/AndrewShedov/enter-text--LARS/tree/main/main) | [Cargo.toml](https://github.com/AndrewShedov/enter-text--LARS/blob/main/main/Cargo.toml)<br>
+[Full code](https://github.com/AndrewShedov/enter-text--LARS/tree/main/main) | [Cargo.toml](https://github.com/AndrewShedov/enter-text--LARS/blob/main/main/Cargo.toml)<br>
 
 **Структура:** <br>
 **L**eptos v0.8.2.<br>
