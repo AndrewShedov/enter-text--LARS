@@ -5,7 +5,7 @@
 [![En](https://img.shields.io/badge/En-black?style=flat&logoColor=whit)](https://github.com/AndrewShedov/enter-text--LARS)<br>
 
 > **Исследовательская статья:** <br>
->  [💎 Дневник разработчика CRYSTAL #3: Сравнительное исследование производительности и кибербезопасности клиент-серверного взаимодействия в технологических стеках LARS и SAHAR](https://shedov.top/crystal-dev-diary-3-comparative-study-lars-and-sahar/)
+>  [💎 Дневник разработчика CRYSTAL #3: Сравнительное исследование производительности и кибербезопасности клиент-серверного взаимодействия в технологических стеках LARS и SAHAR](https://shedov.top/ru/dnevnik-razrabotchika-crystal-3-sravnitelnoe-issledovanie-lars-i-sahar/)
 
 Это приложение является прототипом, разработанным в рамках поиска нового технологического стека для CRYSTAL v3.0.<br>
 Данный прототип позволяет **добавлять**, **отображать**, **обновлять** и **удалять текст**, демонстрируя полный цикл **CRUD**-операций с базой данных ScyllaDB.<br>
