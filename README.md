@@ -10,7 +10,7 @@
 
 This application is a prototype developed as part of the search for a new technology stack for [CRYSTAL v3.0](https://github.com/CrystalSystems).<br>
 This prototype allows you to **add**, **display**, **update**, and **delete text**, demonstrating a full **CRUD** operation cycle with the ScyllaDB database.<br>
-**Blocking Server-Side Rendering (SSR)** fully renders database content directly on the server, guaranteeing **100% search engine indexing** and top-tier **SEO performance**.
+**Blocking Server-Side Rendering (SSR)** fully renders database content directly on the server, guaranteeing **excellent search engine indexing** and top-tier **SEO performance**.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/AndrewShedov/enter-text--LARS/refs/heads/main/assets/gif2.gif"/>
